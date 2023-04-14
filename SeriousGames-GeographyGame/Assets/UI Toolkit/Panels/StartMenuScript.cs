@@ -28,6 +28,7 @@ namespace UI_Toolkit.Panels
             Debug.Log("Loading: Next Scene");
             yield return new WaitForSeconds(2f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Debug.Log("Loaded: Next Scene");
         }
 
         // ReSharper disable Unity.PerformanceAnalysis
@@ -36,6 +37,7 @@ namespace UI_Toolkit.Panels
             Debug.Log("Quitting: Application");
             yield return new WaitForSeconds(1f);
             Application.Quit();
+            Debug.Log("Quited: Application");
         }
     }
 }

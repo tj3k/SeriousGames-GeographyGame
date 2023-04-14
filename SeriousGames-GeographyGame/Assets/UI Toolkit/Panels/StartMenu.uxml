@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Labels.uss?fileID=7433441132597879392&amp;guid=e540aab41a0e70d429c75b88162d2fc9&amp;type=3#Labels" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Buttons.uss?fileID=7433441132597879392&amp;guid=fd1f9874a22567744bc7a609677e3dc0&amp;type=3#Buttons" />
+    <ui:VisualElement name="Canvas" style="justify-content: center; height: 160px; flex-grow: 1; flex-direction: row; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgb(87, 62, 62);">
+        <ui:VisualElement name="LeftSide" style="width: 55%; margin-left: 50px; margin-right: 0; padding-left: 0; padding-right: 0; background-color: rgb(224, 205, 138);" />
+        <ui:VisualElement name="RightSide" style="width: 45%; margin-left: 50px; margin-right: 50px; margin-top: 80px; margin-bottom: 80px; align-items: center;">
+            <ui:Label text=" Dungeon&#10;Dive" display-tooltip-when-elided="true" name="GameTextLogo" class="label-main-title" style="height: 258px; background-color: rgb(238, 183, 98); color: rgb(32, 27, 41); font-size: 120px; -unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/Gorilla.ttf?fileID=12800000&amp;guid=3395f20ef0e62fd43aba11ba41c58a7c&amp;type=3#Gorilla&apos;); -unity-font-style: bold; -unity-paragraph-spacing: -150px; letter-spacing: -7px; width: 727px; padding-bottom: 0; padding-right: 38px; padding-left: 0; margin-bottom: 60px; margin-top: 60px; margin-right: 0; margin-left: 0; padding-top: 0; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Gorilla%20SDF.asset?fileID=11400000&amp;guid=0282cc597641cf543ae4ad957691ad8c&amp;type=2#Gorilla SDF&apos;);" />
+            <ui:VisualElement style="width: 720px; height: 428px; align-items: center; background-color: rgba(0, 0, 0, 0.3); padding-left: 30px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-right: 30px; padding-top: 30px; padding-bottom: 30px; justify-content: center; flex-grow: 1;">
+                <ui:Button text="NEW RUN" display-tooltip-when-elided="true" name="NewRunButton" class="button-main-title" style="height: 134px; width: 643px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 15px; margin-bottom: 15px; font-size: 100px; background-color: rgb(150, 176, 65); -unity-background-scale-mode: stretch-to-fill; letter-spacing: -40px; word-spacing: 20px;" />
+                <ui:Button text="SETTINGS" display-tooltip-when-elided="true" name="SettingsButton" class="button-main-subtitle" style="height: 15%; width: 70%; margin-bottom: 10px; margin-top: 10px; font-size: 38px; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:Button text="QUIT" display-tooltip-when-elided="true" name="QuitButton" class="button-main-subtitle" style="height: 15%; width: 70%; margin-bottom: 10px; margin-top: 10px; font-size: 38px; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

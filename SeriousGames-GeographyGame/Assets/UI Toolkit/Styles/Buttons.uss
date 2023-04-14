@@ -1,0 +1,63 @@
+.button-main-title {
+    background-color: rgb(186, 216, 90);
+    visibility: visible;
+    display: flex;
+    overflow: visible;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    -unity-font: url('project://database/Assets/Fonts/Journal/journalbold.ttf?fileID=12800000&guid=e42484e75eede664688ef68e6020d2fb&type=3#journalbold');
+    border-left-color: rgba(79, 128, 31, 255);
+    border-right-color: rgba(79, 128, 31, 255);
+    border-top-color: rgba(79, 128, 31, 255);
+    border-bottom-color: rgba(79, 128, 31, 255);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 1;
+    -unity-font-definition: url('project://database/Assets/Fonts/Journal/journalbold%20SDF.asset?fileID=11400000&guid=fbaae0a9bb988da438860e3d8b4f1377&type=2#journalbold SDF');
+    font-size: 14px;
+}
+
+.button-main-title:hover {
+    background-color: rgb(221, 241, 155);
+}
+
+.button-main-title:active {
+    background-color: rgb(150, 176, 65);
+}
+
+.button-main-subtitle {
+    background-color: rgba(200, 182, 172, 255);
+    -unity-font-style: normal;
+    -unity-font: url('project://database/Assets/Fonts/Journal/journalultra.ttf?fileID=12800000&guid=0c37a45ee21ee6243bedca299cdf95dc&type=3#journalultra');
+    -unity-text-align: middle-center;
+    border-left-color: rgba(103, 82, 101, 255);
+    border-right-color: rgba(103, 82, 101, 255);
+    border-top-color: rgba(103, 82, 101, 255);
+    border-bottom-color: rgba(103, 82, 101, 255);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -unity-background-scale-mode: scale-and-crop;
+    -unity-font-definition: url('project://database/Assets/Fonts/Journal/journalultra%20SDF.asset?fileID=11400000&guid=a382f858a59d6594283ae2fe859d0cdd&type=2#journalultra SDF');
+    text-shadow: 0 0 0 rgba(0, 0, 0, 255);
+}
+
+.button-main-subtitle:hover {
+    background-color: rgba(224, 224, 224, 255);
+}
+
+.button-main-subtitle:active {
+    background-color: rgba(166, 151, 151, 255);
+}
