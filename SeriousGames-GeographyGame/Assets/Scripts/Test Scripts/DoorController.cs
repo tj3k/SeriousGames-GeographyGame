@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using Cursor = UnityEngine.UIElements.Cursor;
 
 public class DoorController : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class DoorController : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 UI.SetActive(true);
+                
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                
+                Debug.Log("Opening: Question UI");
             }
         }
     }
