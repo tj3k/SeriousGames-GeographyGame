@@ -2682,7 +2682,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1924987488}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
-        m_MethodName: wrongAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6697,7 +6697,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1924987488}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
-        m_MethodName: wrongAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7725,7 +7725,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1924987488}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
-        m_MethodName: correctAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8269,7 +8269,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1924987488}
         m_TargetAssemblyTypeName: Puzzle, Assembly-CSharp
-        m_MethodName: wrongAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

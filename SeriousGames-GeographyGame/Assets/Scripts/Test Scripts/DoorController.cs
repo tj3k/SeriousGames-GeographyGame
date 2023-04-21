@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 // using Cursor = UnityEngine.UIElements.Cursor;
 
 public class DoorController : MonoBehaviour
@@ -16,14 +20,27 @@ public class DoorController : MonoBehaviour
         {
             if (openTrigger)
             {
-                gameObject.SetActive(false);
+                // gameObject.SetActive(false);
                 UI.SetActive(true);
                 
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
-                
+
                 Debug.Log("Opening: Question UI");
             }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // gameObject.SetActive(true);
+            UI.SetActive(false);
+
+            Cursor.visible = false;
+            
+            Debug.Log("Closing: Question UI");
         }
     }
 }
