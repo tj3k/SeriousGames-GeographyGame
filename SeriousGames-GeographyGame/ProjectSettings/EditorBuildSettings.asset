@@ -6,15 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: d321f31ab549f3a459ee57788113ae04
-  - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/TembaniVersion/MainMenu.unity
     guid: 8b1e2c8fb51e99f448eee0be741999fa
   - enabled: 1
-    path: Assets/Scenes/TembaniVersion/MainScene.unity
-    guid: fc56f366d9edaa94c9ad3d837fffb497
+    path: Assets/Scenes/FraserVersion/MainScene_Functioning.unity
+    guid: 3d80b849fff39c748a26fb10097088cd
   m_configObjects: {}
