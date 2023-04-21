@@ -5,8 +5,6 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// using Cursor = UnityEngine.UIElements.Cursor;
-
 public class DoorController : MonoBehaviour
 {
     [SerializeField] private Animator Test = null;
@@ -14,13 +12,16 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool closeTrigger = false;
     [SerializeField] GameObject UI;
 
+    /* When player walks onto the green area,
+     * A relative UI Window will pop-up,
+     * whether it's a QuestionWall or Book Panel assigned to the code. 
+     */
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             if (openTrigger)
             {
-                // gameObject.SetActive(false);
                 UI.SetActive(true);
                 
                 Cursor.lockState = CursorLockMode.Confined;
@@ -31,11 +32,11 @@ public class DoorController : MonoBehaviour
         }
     }
 
+    // When the player walks outside the green area, the UI Windows turns invisible.
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // gameObject.SetActive(true);
             UI.SetActive(false);
 
             Cursor.visible = false;
