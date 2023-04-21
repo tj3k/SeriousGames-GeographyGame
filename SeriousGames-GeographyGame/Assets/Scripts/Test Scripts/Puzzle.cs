@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puzzle : MonoBehaviour
 {
     public GameObject UI;
+    public GameObject buttonWrong1;
+    public GameObject buttonWrong2;
+    public GameObject buttonWrong3;
+    public GameObject buttonCorrect;
     public GameObject interactionBlock;
     public Animator door;
 
@@ -35,6 +40,24 @@ public class Puzzle : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         Debug.Log("Answer: Incorrect");
+    }
+
+    public void WrongAnswerColorOne()
+    {
+        buttonWrong1.GetComponent<Image>().color = Color.red;
+    }
+    public void WrongAnswerColorTwo()
+    {
+        buttonWrong2.GetComponent<Image>().color = Color.red;
+    }
+    public void WrongAnswerColorThree()
+    {
+        buttonWrong3.GetComponent<Image>().color = Color.red;
+    }
+    
+    public void CorrectAnswerColor()
+    {
+        buttonCorrect.GetComponent<Image>().color = Color.green;
     }
     
     // Function purely for closing UI and not destroying interact object.
